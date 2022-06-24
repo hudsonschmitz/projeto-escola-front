@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/jin.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="/css/jin.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <title>Login</title>
+  </head>
+  <body>    
+    
+             <!--Chama o Menu-->
+      <nav class="dp-menu"></nav>      
+
+      <center>
+
+        <h1>Crie seu login!</h1>    
+
+        <form name="form1" method="post" action="index.html" onSubmit="return valida(this)" >
+
+          <label for="">E-mail</label><br />
+
+            <input type="text" class="border"  placeholder="E-mail" required/><br /><br />
+
+          <label for="">Nome</label><br />
+
+            <input type="text" class="border" placeholder="Nome" required/><br /><br />
+
+          <label for="">CPF</label><br />
+
+            <input id="cpf" name="cpf" type="text"  class="border"  placeholder="000.000.000-00" required /><br /><br />
+
+          <label for="">Senha</label><br />
+
+            <input type="password" class="border" placeholder="Senha"  id="typepass"  required /><br /><br />
+
+            <input type="checkbox" onclick="Toggle()" />
+
+            <b>Mostrar a senha</b><br /><br />
+
+            <button type="submit">Entrar</button>
+
+        </form>
+      
+        <br/>
+
+      </center>
+
+      <script src="/js/jin.js"></script>
+      <script type="text/javascript"></script>
+    
+</body>
+
+</html>

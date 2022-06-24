@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="/css/print_dashboard.css">
+    <link rel="stylesheet" href="/css/jin.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>financeiro</title>
+    <script src="loadNotas.js"></script>
+  </head>
+  <body>
+   
+    <nav class="dp-menu">
+    
+    </nav>
+    <script src="/js/jin.js"></script>
+    <center>
+      <h3>Informe a turma</h3>
+
+      <input type="text" id="turma" placeholder="Turma" />
+      <button onclick="loadNotas()" class="btn btn-secondary">Consultar</button>
+    </center>
+    <table class="table" id="tabelaPrinc">
+      <thead>
+        <tr>
+            <th>Matricula</th>
+            <th>Materia</th>
+            <th>Professor(A)</th>
+            <th>Aluno</th>
+            <th>Turma/Ano</th>
+            <th>Nota</th>
+            <th>Faltas</th>
+            <th>Total de aulas</th>
+            <th>Situação</th>
+            <th>Editar</th>
+            <th>Excluir</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+  </body>
+</html>
